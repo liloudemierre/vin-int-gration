@@ -12,3 +12,21 @@ img,
 video {
   display: block;
 }
+
+body {
+  background-color: #f2ece0;
+}
+
+.fond-container {
+  display: flex;
+  justify-content: center;
+  padding-top: 129px;
+}
+.fond {
+  width: 1282px;
+  height: 100%;
+  border-radius: 615px 615px 0px 0px;
+  background: #ffb37c;
+  position: absolute;
+  display: flex;
+}
