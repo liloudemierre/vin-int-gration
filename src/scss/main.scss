@@ -12,21 +12,94 @@ img,
 video {
   display: block;
 }
+@import "bootstrap/scss/bootstrap-grid";
+
+:root {
+  --beige: #f2ece0;
+  --brown: #302207;
+  --orange: #ffb37c;
+}
+
+.row + .row {
+  margin-top: 16px;
+}
+
+.row > .col,
+.row > [class^="col-"] {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: rgba(86, 61, 124, 0.15);
+  border: 1px solid rgba(86, 61, 124, 0.2);
+}
+
+.container {
+  padding-top: 20px;
+}
 
 body {
-  background-color: #f2ece0;
+  background-color: var(--beige);
 }
 
 .fond-container {
   display: flex;
   justify-content: center;
-  padding-top: 129px;
 }
+
 .fond {
+  background-color: var(--orange);
+  border-radius: 615px 615px 0px 0px;
   width: 1282px;
   height: 100%;
-  border-radius: 615px 615px 0px 0px;
-  background: #ffb37c;
   position: absolute;
+  opacity: 70%;
+  margin-top: 198px;
+  margin-left: 73px;
+  margin-right: 73px;
+}
+
+.header {
+  font-family: "8";
+  font-size: 20px;
+  color: var(--brown);
   display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 21px;
+}
+.logo-svg {
+  width: 57.523px;
+  height: 73.172px;
+}
+
+.menu {
+  font-family: Gelica;
+  font-size: 16px;
+  display: flex;
+  gap: 44px;
+}
+
+.icons {
+  display: flex;
+}
+.language {
+  color: var(--beige);
+  border-radius: 5px;
+  background: var(--brown);
+  padding: 4px 12px;
+  font-family: gelica;
+}
+.icon-shop {
+  font-family: "Font Awesome 6 Free";
+  font-size: 27px;
+  font-weight: 900;
+}
+
+.icon-user {
+  font-family: "Font Awesome 6 Free";
+  font-size: 27px;
+  font-weight: 900;
 }
