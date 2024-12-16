@@ -14,24 +14,26 @@ video {
 }
 @import "bootstrap/scss/bootstrap-grid";
 
+.row > .col,
+.row > [class^="col-"] {
+  padding: 0;
+  background-color: rgba(86, 61, 124, 0.15);
+  border: 1px solid rgba(86, 61, 124, 0.2);
+}
+
 :root {
   --beige: #f2ece0;
   --brown: #302207;
   --orange: #ffb37c;
+  --lighter-brown: #69552f;
 }
 
 .row + .row {
   margin-top: 16px;
 }
-
-.row > .col,
-.row > [class^="col-"] {
-  padding-top: 12px;
-  padding-bottom: 12px;
-  background-color: rgba(86, 61, 124, 0.15);
-  border: 1px solid rgba(86, 61, 124, 0.2);
+a {
+  text-decoration: none;
 }
-
 .container {
   padding-top: 20px;
 }
@@ -72,6 +74,7 @@ body {
   align-items: center;
   gap: 21px;
 }
+
 .logo-svg {
   width: 57.523px;
   height: 73.172px;
@@ -313,12 +316,22 @@ body {
 
 .image-degustation {
   margin-top: 132px;
+  margin-bottom: 221px;
 }
 
 .infos-reseaux {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 25px;
+}
+.infos-reseaux-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 70px;
+  margin-left: 50px;
+  margin-right: -110px;
 }
 
 .logo-nom-domaine {
@@ -343,16 +356,19 @@ body {
   margin-top: 32px;
 }
 
-.line {
-  width: 0.5px;
-  height: 195.023px;
-  color: var(--brown);
-}
-
 .newsletter {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 70px;
+}
+
+.newsletter-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 70px;
+  margin-right: -50px;
 }
 
 .newsletter-titre {
@@ -374,7 +390,7 @@ body {
   width: 245px;
   font-size: 16px;
   font-weight: 300;
-  margin-top: 40ßpx;
+  margin-top: 30px;
 }
 
 .num {
@@ -388,5 +404,48 @@ body {
   font-size: 18px;
   font-weight: 600;
 }
-.num-icon {
+
+.ventes {
+  color: var(--brown);
+  display: flex;
+  flex-direction: column;
+  margin-left: 110px;
+  margin-top: 70px;
+}
+.titre-ventes {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.horaires-jours {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.horaires {
+  margin-top: 17px;
+}
+
+.ventes-container {
+  margin-left: -35px;
+}
+.line {
+  width: 0.5px;
+  height: 195px;
+  background-color: var(--brown);
+  margin-top: 60px;
+}
+
+.footer-bottom {
+  color: var(--lighter-brown);
+  font-size: 14px;
+  font-weight: 500;
+  display: flex;
+  gap: 100px;
+  justify-content: center;
+  align-items: center;
+}
+
+.bio-suisse {
+  margin-left: -70px;
 }

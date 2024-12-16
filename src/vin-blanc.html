@@ -7,13 +7,20 @@
     <link rel="stylesheet" href="scss/main.scss" />
   </head>
   <body>
-    <div class="container">
-      <div class="row">
-        <div class="col">header</div>
-      </div>
+    <extend> </extend>
+    <script src="js/main.js" type="module"></script>
+    <extends src="header.html"></extends>
+    <div class="background-top">
       <div class="container">
         <div class="row">
-          <div class="col-12">vin détail</div>
+          <div class="col-12">
+            <div class="detail-background">
+              <img
+                src="images/blanc-détail.png"
+                alt="bouteille de vin blanc de chez soleil des vallées"
+              />
+            </div>
+          </div>
         </div>
       </div>
       <div class="container">
@@ -26,20 +33,7 @@
           <div class="col-12">autres vins</div>
         </div>
       </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-4">infos/réseaux</div>
-          <div class="col-4">newsletter/num</div>
-          <div class="col-4">ventes/dégustation</div>
-        </div>
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-12">footer</div>
-        </div>
-      </div>
     </div>
-    <a href="index.html">accueil</a>
-    <script src="js/main.js" type="module"></script>
+    <extends src="footer.html"></extends>
   </body>
 </html>
