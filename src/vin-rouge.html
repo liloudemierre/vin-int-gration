@@ -5,41 +5,140 @@
     <title>eikon parcel starter</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="scss/main.scss" />
+    <link rel="stylesheet" href="https://use.typekit.net/acg2rmb.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/vxb7sin.css" />
   </head>
   <body>
-    <div class="container">
-      <div class="row">
-        <div class="col">header</div>
-      </div>
+    <extend> </extend>
+    <script src="js/main.js" type="module"></script>
+    <extends src="header.html"></extends>
+    <div class="background-top">
       <div class="container">
-        <div class="row">
-          <div class="col-12">vin détail</div>
+        <div class="detail-background-2">
+          <div class="row">
+            <div class="col-6 offset-3 titre-detail">Pinot Noir</div>
+          </div>
+          <div class="row">
+            <div class="col-2 offset-2">
+              <img
+                class="rouge-detail"
+                src="images/rouge-detail.png"
+                alt="bouteille de vin blanc de chez soleil des vallées"
+              />
+            </div>
+            <div class="col-8">
+              <div class="detail-container">
+                <div class="colone-1">
+                  <div class="contenu-detal">
+                    <div class="weight">Premier milésime</div>
+                    2003
+                  </div>
+                  <div class="contenu-detal">
+                    <div class="weight">Milésime actuel</div>
+                    2022
+                  </div>
+                  <div class="contenu-detal">
+                    <div class="weight">Vinification</div>
+                    Fermentations et élevages de 18 mois en barriques pour
+                    chacun des cépages avant assemblage en cuve inox.
+                  </div>
+                  <div class="contenu-detal">
+                    <div class="weight">Potentiel de garde</div>
+                    5 à 7 ans
+                  </div>
+                  <div class="contenu-detal">
+                    <div class="weight">Température de service</div>
+                    8-10°C
+                  </div>
+                  <img
+                    class="bio-suisse-detail"
+                    src="images/bio-suisse-detail.svg"
+                    alt="logo bio suisse"
+                  />
+                  <div class="bouton-panier">
+                    <div class="prix">CHF 34.90</div>
+                    <div class="panier-icon">shopping-bag</div>
+                  </div>
+                </div>
+                <div class="colone-2">
+                  <div class="contenu-detal">
+                    <div class="weight">Provenance</div>
+                    Sélection des Côteau de Sierre
+                  </div>
+                  <div class="contenu-detail">
+                    <div class="weight">Cépages(s)</div>
+                    100% Chardonnay
+                  </div>
+                  <div class="accords">
+                    <div class="weight">Accords Mets et Vins</div>
+
+                    Viande blanche, charcuteries, saumon grillé, Tomme de
+                    Savoie, Reblochon
+                  </div>
+                  <div class="contenu-detail">
+                    <div class="weight">Notes de dégustation</div>
+
+                    Ce Pinot Noir dévoile une texture soyeuse et une vivacité
+                    équilibrée, avec des tanins délicats et une belle structure
+                    élégante. Sa finale persistante, légèrement minérale,
+                    prolonge harmonieusement le plaisir en bouche.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <div class="container">
         <div class="row">
-          <div class="col-6 offset-3">vous pourriez aussi aimer</div>
+          <div class="col-6 offset-3">
+            <div class="suggestion">Vous pourriez aussi aimer</div>
+          </div>
         </div>
       </div>
-      <div class="container">
+      <div class="container suggestion-container">
         <div class="row">
-          <div class="col-12">autres vins</div>
-        </div>
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-4">infos/réseaux</div>
-          <div class="col-4">newsletter/num</div>
-          <div class="col-4">ventes/dégustation</div>
-        </div>
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-12">footer</div>
+          <div class="col-3">
+            <div class="suggestion-bloc">
+              <div class="suggestion-background">
+                <img
+                  class="image-suggestion"
+                  src="images/rose-copie.png"
+                  alt="bouteille de rosé de Soleil des Vallées"
+                />
+                <div class="suggestion-titre">Gamay Rosé</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 offset-1">
+            <div class="suggestion-bloc">
+              <div class="suggestion-background">
+                <img
+                  class="image-suggestion-rouge"
+                  src="images/blanc copie.png"
+                  alt="bouteille de rosé de Soleil des Vallées"
+                />
+                <a class="suggestion-titre" href="vin-blanc.html"
+                  >Gewürztraminer</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-3 offset-1">
+            <div class="suggestion-bloc">
+              <div class="suggestion-background">
+                <img
+                  class="image-suggestion"
+                  src="images/rose-copie.png"
+                  alt="bouteille de rosé de Soleil des Vallées"
+                />
+                <div class="suggestion-titre">Gamay Rosé</div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-    <a href="index.html">accueil</a>
-    <script src="js/main.js" type="module"></script>
+    <extends src="footer.html"></extends>
   </body>
 </html>
