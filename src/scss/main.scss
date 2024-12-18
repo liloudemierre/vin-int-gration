@@ -83,7 +83,7 @@ body {
 
 .menu {
   font-family: Gelica;
-  font-size: 16px;
+  font-size: 16 px;
   display: flex;
   gap: 44px;
 }
@@ -158,19 +158,47 @@ body {
   margin-top: -900px;
   margin-left: 250px;
 }
-.bouton-titre {
+
+.bouton-brun {
   border-radius: 25px;
   background: var(--brown);
   color: var(--beige);
   display: flex;
-  width: 358px;
+  width: fit-content;
   height: 45px;
-  padding: 0px 26px;
+  padding: 0px 56px;
   justify-content: center;
   align-items: center;
-  margin-top: -80px;
+  font-size: 20px;
+  font-weight: 400;
+  transition-property: color transform;
+  transition-duration: 0.2s;
 }
-
+.bouton-brun:hover {
+  background-color: var(--beige);
+  color: var(--brown);
+  transform: scale(1.1);
+}
+.bouton-beige {
+  border-radius: 25px;
+  background: var(--beige);
+  color: var(--brown);
+  display: flex;
+  width: fit-content;
+  height: 45px;
+  padding: 0px 56px;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 400;
+  transition-property: color;
+  transition-duration: 0.5s;
+  transition-delay: 0.2s;
+}
+.bouton-beige:hover {
+  background-color: var(--orange);
+  transform: scale(1.1);
+}
 .nos-valeurs {
   border-radius: 360px 360px 0px 0px;
   background: var(--brown);
@@ -203,20 +231,6 @@ body {
   font-size: 18px;
   font-weight: 300;
   width: 456px;
-}
-
-.bouton-valeurs {
-  border-radius: 25px;
-  background: #f2ece0;
-  display: flex;
-  width: 263px;
-  height: 45px;
-  padding: 0px 26px;
-  justify-content: center;
-  align-items: center;
-  color: var(--brown);
-  font-size: 20px;
-  font-weight: 400;
 }
 
 .nos-vignerons {
@@ -258,21 +272,6 @@ body {
   width: 548px;
 }
 
-.bouton-vignerons {
-  color: var(--brown);
-  text-align: center;
-  font-size: 20px;
-  font-weight: 400;
-  border-radius: 25px;
-  background: var(--beige);
-  display: flex;
-  width: 358px;
-  height: 45px;
-  padding: 0px 26px;
-  justify-content: center;
-  align-items: center;
-}
-
 .nos-vignerons-container {
   margin-top: 125px;
   display: flex;
@@ -300,21 +299,7 @@ body {
   color: var(--brown);
   font-size: 18px;
   font-weight: 300;
-}
-
-.bouton-degustation {
-  border-radius: 25px;
-  background: var(--brown);
-  display: flex;
-  width: 169px;
-  padding: 10px;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  color: var(--beige);
-  font-size: 18px;
-  font-weight: 400;
-  margin-top: 38px;
+  margin-bottom: 38px;
 }
 
 .image-degustation {
