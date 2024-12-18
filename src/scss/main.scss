@@ -67,6 +67,7 @@ body {
   justify-content: space-between;
   align-items: center;
   margin-top: 15px;
+  margin-bottom: 114px;
 }
 
 .logo {
@@ -448,4 +449,105 @@ body {
 
 .bio-suisse {
   margin-left: -70px;
+}
+
+.detail-background {
+  width: 1117px;
+  height: 962px;
+  background-size: 100%;
+  max-width: 90%;
+  border-radius: 970em 970em 0 0;
+  background: var(--brown);
+  display: flex;
+  justify-self: center;
+  margin-top: 63px;
+}
+
+.titre-detail {
+  color: #f2ece0;
+  text-align: center;
+  font-family: "8";
+  font-size: 66px;
+  font-weight: 400;
+  text-transform: uppercase;
+  width: 548px;
+}
+
+.colone-2 {
+  color: var(--beige);
+  font-weight: 300;
+  display: flex;
+  width: 20vw;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 29px;
+}
+.colone-1 {
+  display: flex;
+  width: 15vw;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 28px;
+  color: var(--beige);
+  font-weight: 300;
+}
+.weight {
+  font-weight: 500;
+}
+
+.panier-icon {
+  color: var(--brown);
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+}
+
+.bouton-panier {
+  display: flex;
+  width: 264px;
+  height: 43px;
+  padding-left: 29px;
+  justify-content: center;
+  align-items: center;
+  gap: 17px;
+  border-radius: 25px;
+  background: var(--beige);
+  margin-top: 10px;
+}
+
+.prix {
+  color: var(--brown);
+}
+
+.panier-icon {
+  font-size: 24px;
+  margin-right: 22px;
+}
+
+.blanc-detail {
+  margin-left: -33vw;
+  width: 15.5vw;
+  height: 50vw;
+  transform: translate(5vw, 15.5vw);
+}
+
+.detail-container {
+  display: flex;
+  transform: translate(145px, 355px);
+  gap: 38px;
+}
+
+.titre-detail {
+  display: flex;
+  transform: translate(270px, 85px);
+}
+.suggestion {
+  color: var(--brown);
+  text-align: center;
+  font-size: 40px;
+  font-weight: 700;
+  margin-top: 131px;
+}
+
+.accords {
+  width: calc(330 / 1920 * 100vw);
 }
